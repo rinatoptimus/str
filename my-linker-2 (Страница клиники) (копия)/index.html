@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-sidebar">
-                <div class="well">
+                <div class="well" id="sidebar">
                     <div class="sidebar-logo"></div>
                     <ul class="nav nav-pills nav-stacked">
                         <li class="active text-uppercase"><a href="#">Клиника Биомед</a></li>
@@ -128,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-9 bg-white">
+            <div class="col-lg-9 col-about bg-white">
                 <ul class="header-list pull-right">
                     <li><a href="#" class="reviews"><i class="fa fa-comment fa-1" aria-hidden="true"></i> 17</a></li>
                     <li><a href="#"><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 219</a></li>
@@ -353,5 +353,21 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+        $('#sidebar').affix({
+            offset: {
+                top: 100
+            }
+        });
+
+        var $body   = $(document.body);
+        var navHeight = $('.navbar').outerHeight(true) + 10;
+
+        $body.scrollspy({
+            target: '#leftCol',
+            offset: navHeight
+        });
+    </script>
 </body>
 </html>

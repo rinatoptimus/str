@@ -166,22 +166,26 @@ h5 {
   }
 }
 
-.header-list {
-  margin-top: 18px;
-  margin-bottom: 0;
-  li {
-    float: left;
-    padding-right: 15px;
-    font-size: 11px;
+.col-about {
+  float: right;
+    .header-list {
+      margin-top: 18px;
+      margin-bottom: 0;
+      li {
+        float: left;
+        padding-right: 15px;
+        font-size: 11px;
 
-    a {
-      color: $header-list;
+        a {
+          color: $header-list;
+        }
+        .fa-comment {
+          color: $sidebar-link;
+        }
+      }
     }
-    .fa-comment {
-      color: $sidebar-link;
-    }
-  }
 }
+
 
 .col-right {
   float: right;
@@ -398,5 +402,26 @@ h5 {
         }
       }
     }
+  }
+}
+
+
+
+/* for sticky sidebar */
+.affix-top,.affix{
+  position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    //margin-top:30px;
+    width:228px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:30px;
+    width:228px;
   }
 }

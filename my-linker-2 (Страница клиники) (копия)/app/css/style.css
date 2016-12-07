@@ -685,17 +685,19 @@ h5 {
           .clinic-img .clinic-img-list li.li-address .clinic-address li .fa-map-marker, .clinic-img .clinic-img-list li.li-address .clinic-address li a {
             color: #fff; }
 
-.header-list {
-  margin-top: 18px;
-  margin-bottom: 0; }
-  .header-list li {
-    float: left;
-    padding-right: 15px;
-    font-size: 11px; }
-    .header-list li a {
-      color: #898989; }
-    .header-list li .fa-comment {
-      color: #68a697; }
+.col-about {
+  float: right; }
+  .col-about .header-list {
+    margin-top: 18px;
+    margin-bottom: 0; }
+    .col-about .header-list li {
+      float: left;
+      padding-right: 15px;
+      font-size: 11px; }
+      .col-about .header-list li a {
+        color: #898989; }
+      .col-about .header-list li .fa-comment {
+        color: #68a697; }
 
 .col-right {
   float: right;
@@ -870,6 +872,19 @@ h5 {
     .col-certificates .row div img {
       width: 200px;
       margin-bottom: 5px; } }
+
+/* for sticky sidebar */
+.affix-top, .affix {
+  position: static; }
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    width: 228px; }
+  #sidebar.affix {
+    position: fixed;
+    top: 30px;
+    width: 228px; } }
 
 @font-face {
   font-family: 'Open Sans Light';
