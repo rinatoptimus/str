@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My linker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-main-menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="nav-clinics" href="#">Клиники</a></li>
+                    <li><a class="nav-doctors" href="#">Врачи</a></li>
+                    <li><a class="nav-medicines" href="#">Лекарства</a></li>
+                    <li><a class="nav-researches" href="#">Обследования</a></li>
+                    <li><a class="nav-medtourism" href="#">Медтуризм</a></li>
+                    <li><a class="nav-category" href="#">Категория</a></li>
+                    <li><a class="nav-library" href="#">Библиотека</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-sign-in fa-2" aria-hidden="true"></i>Вход</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav><!-- navbar-main-menu -->
+
+    <nav class="navbar navbar-fixed-top navbar-contacts">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-contacts" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="logo logo-top" href="#" title=""></a>
+                <div class="logo-border"></div>
+            </div>
+            <div id="navbar-contacts" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <p class="lab">Ваш город:</p>
+                        <p class='box'>
+                            <select class="selectpicker">
+                                <option>Казань</option>
+                                <option>Самара</option>
+                                <option>Калуга</option>
+                            </select>
+                            <!--<i class="fa fa-caret-down" aria-hidden="true"></i>-->
+                            <i class="fa fa-chevron-down fa-1" aria-hidden="true"></i>
+                        </p>
+                    </li>
+                    <li class="phone-number-descr">Единый центр записи</li>
+                    <li><a class="phone-number" href="#"><span class="numbers">8 (800)</span> 333-03-03</a></li>
+                    <li class="divider-phone"><div></div></li>
+                    <li><a class="registration" href="#">Регистрация</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav><!-- navbar-contacts -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sidebar">
+                <div class="sidebar-logo"></div>
+                <div class="well">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">Клиника Биомед</a></li>
+                        <li><a href="#" class="text-uppercase">Врачи</a></li>
+                        <li><a href="#" class="text-uppercase">Описание</a></li>
+                        <li><a href="#" class="text-uppercase">Фотографии</a></li>
+                        <li><a href="#" class="text-uppercase">Исследования</a></li>
+                        <li><a href="#" class="text-uppercase">Документы</a></li>
+                        <li><a href="#" class="text-uppercase">Реквизиты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="breadcrumb">
+                            <li><a class="breadcrumb-first" href="#">Оформление заказа</a></li>
+                            <li><a href="#">Методы оплаты и доставки</a></li>
+                            <li class="active"><span>Оплата</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row row-img bg-white">
+                    <div class="col-lg-12">
+                        <div class="clinic-img">
+                            <ul class="clinic-img-list">
+                                <li class="li-logo">
+                                    <div class="clinic-logo"></div>
+                                </li>
+                                <li class="li-address">
+                                    <ul class="clinic-address">
+                                        <li>
+                                            Казань, ул. Четаева, 19
+                                        </li>
+                                        <li>
+                                            Казань, ул. Чистопольская, 19
+                                        </li>
+                                        <li>
+                                            Казань, ул. Ямашева, 33
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 bg-white">
+                <ul class="header-list pull-right">
+                    <li>17</li>
+                    <li>219</li>
+                    <li>qqq</li>
+                </ul>
+                <h4>Клиника Биомед</h4>
+                <p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа новых предложений. Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития. Товарищи! рамки и место обучения кадров играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p>
+            </div>
+
+            <div class="col-lg-9 bg-white col-right">
+                <div class="row row-images">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="app/img/150.jpg" alt="" title="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="app/img/150.jpg" alt="" title="">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <img src="app/img/150.jpg" alt="" title="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-right col-persons">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="thumbnail">
+
+                            <ul class="thumbnail-info">
+                                <li>
+                                    <ul class="thumbnail-profession-tags">
+                                        <li><a href="#" class="text-uppercase">Кардиолог</a></li>
+                                        <li><a href="#" class="text-uppercase">Дерматолог</a></li>
+                                        <li><a href="#" class="text-uppercase">Венеролог</a></li>
+                                    </ul>
+                                </li>
+                                <li class="pull-right">
+                                    <ul class="thumbnail-statistics">
+                                        <li>17</li>
+                                        <li>219</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <img class="img-circle" src="http://placehold.it/130x130&text=Person 1" alt="">
+                            <div class="caption">
+                                <h3>Евгений Гуляев</h3>
+                                <p class="skill">Заслуженный врач-кардиолог.</p>
+                                <p class="skill">20 лет опыта</p>
+                                <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="thumbnail">
+                            <ul class="thumbnail-info">
+                                <li>
+                                    <ul class="thumbnail-profession-tags">
+                                        <li><a href="#" class="text-uppercase">Кардиолог</a></li>
+                                        <li><a href="#" class="text-uppercase">Дерматолог</a></li>
+                                        <li><a href="#" class="text-uppercase">Венеролог</a></li>
+                                    </ul>
+                                </li>
+                                <li class="pull-right">
+                                    <ul class="thumbnail-statistics">
+                                        <li>17</li>
+                                        <li>219</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img class="img-circle" src="http://placehold.it/130x130&text=Person 1" alt="">
+                            <div class="caption">
+                                <h3>Евгений Гуляев</h3>
+                                <p class="skill">Заслуженный врач-кардиолог.</p>
+                                <p class="skill">20 лет опыта</p>
+                                <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="thumbnail">
+                            <ul class="thumbnail-info">
+                                <li>
+                                    <ul class="thumbnail-profession-tags">
+                                        <li><a href="#" class="text-uppercase">Кардиолог</a></li>
+                                        <li><a href="#" class="text-uppercase">Дерматолог</a></li>
+                                        <li><a href="#" class="text-uppercase">Венеролог</a></li>
+                                    </ul>
+                                </li>
+                                <li class="pull-right">
+                                    <ul class="thumbnail-statistics">
+                                        <li>17</li>
+                                        <li>219</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img class="img-circle" src="http://placehold.it/130x130&text=Person 1" alt="">
+                            <div class="caption">
+                                <h3>Евгений Гуляев</h3>
+                                <p class="skill">Заслуженный врач-кардиолог.</p>
+                                <p class="skill">20 лет опыта</p>
+                                <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="show-all-doctors pull-right" href="#">Посмотреть всех</a>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-right col-diseases bg-white">
+                <h4>Исследования</h4>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h5>УЗИ</h5>
+                        <ul>
+                            <li>- при беременности</li>
+                            <li>- при брюшной полости</li>
+                            <li>- малого таза</li>
+                            <li>- почек</li>
+                            <li>- сердца</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>КТ</h5>
+                        <ul>
+                            <li>- головного мозга</li>
+                            <li>- при брюшной полости</li>
+                            <li>- малого таза</li>
+                            <li>- почек</li>
+                            <li>- сердца</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>МРТ</h5>
+                        <ul>
+                            <li>- головного мозга</li>
+                            <li>- при брюшной полости</li>
+                            <li>- малого таза</li>
+                            <li>- почек</li>
+                            <li>- сердца</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5>Рентген</h5>
+                        <ul>
+                            <li>- головного мозга</li>
+                            <li>- при брюшной полости</li>
+                            <li>- малого таза</li>
+                            <li>- почек</li>
+                            <li>- сердца</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-right col-requisites bg-white">
+                <h4>Реквизиты</h4>
+                <address>
+                    <p><strong>ООО "Барс Медицина"</strong></p>
+                    <p>ИНН/КПП 16552770/165501001</p>
+                    <p>ОРГН 1151690019975</p>
+                    <p>Юр. адрес: 420111, РТ, г. Казань, ул. Карла Маркса, д. 14</p>
+                    <p>Адрес: 420111, РТ, г. Казань, ул. Чистопольская, д. 71А</p>
+                </address>
+            </div>
+
+            <div class="col-lg-9 col-right col-certificates">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-logo">
+                    <a class="logo logo-bottom" href="#" title=""></a>
+                    <div class="logo-border"></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul>
+                        <li><a href="#">Вы врач</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul>
+                        <li><a href="#">Медицинская библиотека</a></li>
+                        <li><a href="#">Симптомы</a></li>
+                        <li><a href="#">Болезни</a></li>
+                        <li><a href="#">Рейтинги</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul>
+                        <li><a href="#">Сетевые клиники</a></li>
+                        <li><a href="#">Вызов врача на дом</a></li>
+                        <li><a href="#">Календарь беременности</a></li>
+                        <li><a href="#">Календарь развития ребенка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

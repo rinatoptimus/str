@@ -1,0 +1,248 @@
+@import '_variables';
+@import '_mixins';
+
+body {
+    background-color: $bg-body;
+    color: $header-h4;
+}
+h4 {
+    font-size: 22px;
+    font-family: $bold;
+    font-weight: 900;
+    //color: $header-h4;
+}
+h5 {
+    font-size: 16px;
+    font-family: $semibold;
+}
+.navbar {
+    //background-color: $white;
+}
+.navbar-contacts {
+    padding-bottom: 10px;
+    background-color: $white;
+}
+.col-sidebar {
+    .well {
+        background-color: $white;
+    }
+}
+.sidebar-logo {
+
+}
+.well {
+    border-radius: 7px;
+    .nav-pills {
+        text-align: left;
+        li.active {
+            a {
+                background-color: transparent;
+            }
+        }
+            li {
+                display: block;
+                &:hover {
+                    background-color: $bg-body;
+                }
+                    a {
+                        //text-transform: $caps;
+                        color: $sidebar-link;
+                        &:hover {
+                            color: $sidebar-link;
+                        }
+                    }
+            }
+    }
+}
+.breadcrumb {
+    .breadcrumb-first {
+        color: $breadcrumb-first;
+    }
+    li {
+        a, span {
+            font-size: 11px;
+            color: $breadcrumb-links;
+        }
+    }
+}
+.breadcrumb>li+li:before {
+    padding: 0;
+    color: $breadcrumb-links;
+}
+.row-img {
+    padding-top: 15px;
+    border-radius: 7px 7px 0 0;
+}
+.bg-white {
+    background-color: $white;
+}
+.clinic-img {
+    height: 200px;
+    border-radius: 7px 7px 0 0;
+    background-color: #f5f5f5;
+   .clinic-img-list {
+       padding-top: 20px;
+           li.li-logo {
+               float: left;
+               margin-right: 10px;
+               background-color: $white;
+               border-radius: 7px;
+                   .clinic-logo {
+                       width: 142px;
+                       height: 60px;
+                       background-color: grey;
+                       background: url('../img/logo-ctbc-corel.png') no-repeat;
+                       background-position: 53% 31%;
+                   }
+           }
+           li.li-address {
+               float: none;
+               .clinic-address {
+
+               }
+           }
+   }
+}
+.header-list {
+    margin-top: 10px;
+    margin-bottom: 0;
+        li {
+            float: left;
+            padding-right: 15px;
+            font-style: 11px;
+            color: $header-list;
+        }
+}
+.col-right {
+    float: right;
+    border-radius: 0 0 7px 7px;
+}
+.row-images {
+    padding-bottom: 15px;
+    border-radius: 0 0 7px 7px;
+}
+.card {
+    position: relative;
+}
+.col-persons {
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.thumbnail {
+    border: none;
+    &:hover {
+        background-color: $bg-thumbnail;
+    }
+    text-align: center;
+        .thumbnail-info {
+            position: absolute;
+            width: 252px;
+            margin-top: 10px;
+            padding-left: 0;
+                li {
+                    float: left;
+                    .thumbnail-profession-tags {
+                        padding-left: 0;
+                            li {
+                                float: none;
+                                margin-bottom: 5px;
+                                width: 100px;
+                                text-align: center;
+                                background-color: #bdbdbd;
+                                border-radius: 11px;
+                                line-height: 19px;
+                                &:hover {
+                                    background-color: $tags-hover;
+                                }
+                                    a {
+                                        font-size: 10px;
+                                        color: $white;
+                                        &:hover {
+                                            text-decoration: none;
+                                        }
+                                    }
+                            }
+                    }
+                }
+                li {
+                    .thumbnail-statistics {
+                        float: left;
+                            li {
+                                padding-right: 15px;
+                                font-size: 11px;
+                                color: $header-list;
+                            }
+                    }
+                }
+        }
+        .caption {
+            h3 {
+                font-size: 16px;
+                font-family: $semibold;
+            }
+            .skill {
+                margin: 0;
+                font-size: 13px;
+                line-height: 20px;
+                color: $thumbnail-light;
+            }
+            .btn-sign-in {
+                margin-top: 15px;
+                padding: 8px 15px;
+                font-size: 9px;
+                //text-transform: $caps;
+                background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+                color: $white;
+                border: none;
+                border-radius: 17px;
+                &:hover {
+                    background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%);
+                }
+            }
+        }
+}
+.show-all-doctors {
+    margin-bottom: 15px;
+    margin-right: 15px;
+    text-decoration: underline;
+    font-size: 16px;
+    color: $header-h4;
+    &:hover {
+        color: $header-h4;
+        text-decoration: none;
+    }
+}
+
+.col-diseases {
+    border-radius: 7px;
+        .row {
+            .col-lg-3 {
+                ul {
+                    padding: 0;
+                        li {
+                            line-height: 25px;
+                            color: $grey-lighter;
+                        }
+                }
+            }
+        }
+}
+
+.col-requisites {
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        address {
+            p {
+                font-style: 16px;
+                color: $grey-lighter;
+                strong {
+                    color: $black;
+                }
+            }
+        }
+}
+.col-certificates {
+    margin-bottom: 30px;
+}
