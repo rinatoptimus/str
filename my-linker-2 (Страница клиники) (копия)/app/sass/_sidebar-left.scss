@@ -218,10 +218,33 @@ h5 {
   padding-right: 0;
 }
 
-/*.col-left {
-    padding-left: 0;
+.col-persons {
+  .col-left {
+    width: 298px;
+    margin-left: -15px;
+    @include medium-desktop-lg {
+      width: 258px;
+    }
+  }
+  .col-center {
+    width: 298px;
+    margin-left: 5px;
+    @include medium-desktop-lg {
+      width: 258px;
+    }
+  }
+  .col-right {
+    width: 285px;
+    margin-left: -5px;
+    padding-right: 0;
+    @include medium-desktop-lg {
+      width: 245px;
+    }
+  }
 }
-.col-right {
+
+
+/*.col-right {
     padding-right: 0;
 }*/
 .thumbnail {
@@ -271,6 +294,9 @@ h5 {
     li {
       .thumbnail-statistics {
         float: left;
+        @include large-desktop {
+          margin-top: -75px;
+        }
         li {
           padding-right: 5px;
           font-size: 11px;
@@ -405,13 +431,3 @@ h5 {
     }
   }
 }
-
-
-/* FOR MODAL */
-
-
-
-
-
-
-

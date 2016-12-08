@@ -813,10 +813,29 @@ h5 {
   padding-left: 0;
   padding-right: 0; }
 
-/*.col-left {
-    padding-left: 0;
-}
-.col-right {
+.col-persons .col-left {
+  width: 298px;
+  margin-left: -15px; }
+  @media (max-width: 991px) {
+    .col-persons .col-left {
+      width: 258px; } }
+
+.col-persons .col-center {
+  width: 298px;
+  margin-left: 5px; }
+  @media (max-width: 991px) {
+    .col-persons .col-center {
+      width: 258px; } }
+
+.col-persons .col-right {
+  width: 285px;
+  margin-left: -5px;
+  padding-right: 0; }
+  @media (max-width: 991px) {
+    .col-persons .col-right {
+      width: 245px; } }
+
+/*.col-right {
     padding-right: 0;
 }*/
 .thumbnail {
@@ -861,6 +880,9 @@ h5 {
               text-decoration: none; }
     .thumbnail .thumbnail-info li .thumbnail-statistics {
       float: left; }
+      @media (max-width: 1201px) {
+        .thumbnail .thumbnail-info li .thumbnail-statistics {
+          margin-top: -75px; } }
       .thumbnail .thumbnail-info li .thumbnail-statistics li {
         padding-right: 5px;
         font-size: 11px; }
@@ -964,12 +986,10 @@ h5 {
         width: 200px;
         margin-bottom: 5px; } }
 
-/* FOR MODAL */
-/* for sticky sidebar */
 .affix-top, .affix {
   position: static; }
 
-@media (min-width: 979px) {
+@media (min-width: 1200px) {
   #sidebar.affix-top {
     position: static;
     width: 228px; }
