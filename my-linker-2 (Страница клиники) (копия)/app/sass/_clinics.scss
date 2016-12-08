@@ -66,10 +66,10 @@ h5 {
 .row-img {
   //padding-top: 15px;
   border-radius: 7px 7px 0 0;
-  .col-lg-12 {
-    padding-left: 0;
-    padding-right: 0;
-  }
+    .col-lg-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
 }
 
 .bg-white {
@@ -144,7 +144,6 @@ h5 {
         float: left;
         padding-right: 15px;
         font-size: 11px;
-
         a {
           color: $header-list;
         }
@@ -331,7 +330,10 @@ h5 {
   border-radius: 7px;
   h4 {
     display: block;
-    margin-bottom: 20px;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
     &:before {
       content: '';
       display: block;
@@ -359,11 +361,16 @@ h5 {
 
 .col-requisites {
   border-radius: 7px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: {
+    top: 10px;
+    bottom: 30px;
+  }
   h4 {
     display: block;
-    margin-bottom: 25px;
+    margin: {
+      top: 20px;
+      bottom: 25px;
+    }
     &:before {
       content: '';
       display: block;
@@ -372,13 +379,15 @@ h5 {
       height: 25px;
       float: left;
       margin: 0 6px 0 0;
-      background-size: 100%;
-      background-position: 44% 57%;
+      background: {
+        size: 100%;
+        position: 44% 57%;
+      }
     }
   }
   address {
     p {
-      font-style: 16px;
+      font-size: 16px;
       color: $grey-lighter;
       strong {
         color: $black;

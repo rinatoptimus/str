@@ -12,6 +12,9 @@
           background-color: transparent;
           text-decoration: underline;
           transition: all 600ms ease-out;
+          &:focus {
+            color: $sidebar-link;
+          }
         }
       }
       li {

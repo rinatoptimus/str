@@ -656,6 +656,8 @@ span.numbers {
       text-decoration: underline;
       -webkit-transition: all 600ms ease-out;
       transition: all 600ms ease-out; }
+      .well nav .nav-pills li.active a:focus {
+        color: #68a697; }
     .well nav .nav-pills li {
       display: block;
       margin-bottom: 5px; }
@@ -954,6 +956,7 @@ h5 {
           border-radius: 7px; }
   .col-diseases h4 {
     display: block;
+    margin-top: 20px;
     margin-bottom: 20px; }
     .col-diseases h4:before {
       content: '';
@@ -978,6 +981,7 @@ h5 {
   margin-bottom: 30px; }
   .col-requisites h4 {
     display: block;
+    margin-top: 20px;
     margin-bottom: 25px; }
     .col-requisites h4:before {
       content: '';
@@ -990,7 +994,7 @@ h5 {
       background-size: 100%;
       background-position: 44% 57%; }
   .col-requisites address p {
-    font-style: 16px;
+    font-size: 16px;
     color: #565656; }
     .col-requisites address p strong {
       color: #000; }
