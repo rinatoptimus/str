@@ -483,15 +483,6 @@ select {
 span.numbers {
   color: #aeaeae; }
 
-/*@import '_jumbotron';
-@import '_how';
-@import '_black-cards';
-@import '_alphabet-filter';
-@import '_med-centers';
-@import '_best-doctors';
-@import '_common-diseases';
-@import '_medicines';
-@import '_alphabet-tabs';*/
 @font-face {
   font-family: 'Open Sans Light';
   font-style: normal;
@@ -651,6 +642,45 @@ span.numbers {
   .modal-content {
     width: 100%; } }
 
+.well {
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  border: none; }
+  .well nav .nav-pills {
+    margin-top: 23px;
+    margin-left: 5px;
+    text-align: left; }
+    .well nav .nav-pills li.active a {
+      margin-left: 3px;
+      background-color: transparent;
+      text-decoration: underline;
+      -webkit-transition: all 600ms ease-out;
+      transition: all 600ms ease-out; }
+    .well nav .nav-pills li {
+      display: block;
+      margin-bottom: 5px; }
+      .well nav .nav-pills li:hover {
+        background-color: #f6f6f6; }
+      .well nav .nav-pills li a {
+        color: #68a697; }
+        .well nav .nav-pills li a:hover {
+          color: #68a697; }
+  @media (max-width: 1201px) {
+    .well nav .nav-stacked > li {
+      float: left; } }
+
+.affix-top, .affix {
+  position: static; }
+
+@media (min-width: 1200px) {
+  #sidebar.affix-top {
+    position: static;
+    width: 228px; }
+  #sidebar.affix {
+    position: fixed;
+    top: 30px;
+    width: 228px; } }
+
 body {
   background-color: #f6f6f6;
   color: #2b2b2b; }
@@ -680,37 +710,18 @@ h5 {
   margin-left: 15px;
   background-color: grey; }
 
-.well {
-  -webkit-border-radius: 7px;
-          border-radius: 7px;
-  border: none; }
-  .well .nav-pills {
-    margin-top: 23px;
-    margin-left: 5px;
-    text-align: left; }
-    .well .nav-pills li.active a {
-      background-color: transparent; }
-    .well .nav-pills li {
-      display: block;
-      margin-bottom: 5px; }
-      .well .nav-pills li:hover {
-        background-color: #f6f6f6; }
-      .well .nav-pills li a {
-        color: #68a697; }
-        .well .nav-pills li a:hover {
-          color: #68a697; }
-  @media (max-width: 1201px) {
-    .well .nav-stacked > li {
-      float: left; } }
-
 .breadcrumb {
   margin-left: -7px;
-  padding: 13px 8px 0px; }
+  padding: 13px 8px 0px;
+  background-color: transparent; }
   .breadcrumb .breadcrumb-first {
     color: #00bdaf; }
   .breadcrumb li a, .breadcrumb li span {
     font-size: 11px;
     color: #6d6d6d; }
+  .breadcrumb li .fa-angle-down {
+    padding-left: 4px;
+    font-size: 10px; }
 
 .breadcrumb > li + li:before {
   padding: 0;
@@ -740,6 +751,8 @@ h5 {
     bottom: 0;
     left: 0;
     background-color: #02211f;
+    -webkit-border-radius: 7px 7px 0 0;
+            border-radius: 7px 7px 0 0;
     opacity: .3; }
   .clinic-img .clinic-img-list {
     position: relative;
@@ -835,9 +848,6 @@ h5 {
     .col-persons .col-right {
       width: 245px; } }
 
-/*.col-right {
-    padding-right: 0;
-}*/
 .thumbnail {
   border: none;
   text-align: center; }
@@ -892,8 +902,17 @@ h5 {
           color: #898989; }
       .thumbnail .thumbnail-info li .thumbnail-statistics .request {
         margin-right: 10px; }
-  .thumbnail img {
-    margin-top: 20px; }
+  .thumbnail .round {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    margin: 17px auto 0; }
+    .thumbnail .round img {
+      display: block;
+      min-width: 100%;
+      min-height: 100%; }
   .thumbnail .caption {
     padding: 9px 9px 20px; }
     .thumbnail .caption h3 {
@@ -934,7 +953,8 @@ h5 {
   -webkit-border-radius: 7px;
           border-radius: 7px; }
   .col-diseases h4 {
-    display: block; }
+    display: block;
+    margin-bottom: 20px; }
     .col-diseases h4:before {
       content: '';
       display: block;
@@ -955,9 +975,10 @@ h5 {
   -webkit-border-radius: 7px;
           border-radius: 7px;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 30px; }
   .col-requisites h4 {
-    display: block; }
+    display: block;
+    margin-bottom: 25px; }
     .col-requisites h4:before {
       content: '';
       display: block;
@@ -985,18 +1006,6 @@ h5 {
       .col-certificates .row div img {
         width: 200px;
         margin-bottom: 5px; } }
-
-.affix-top, .affix {
-  position: static; }
-
-@media (min-width: 1200px) {
-  #sidebar.affix-top {
-    position: static;
-    width: 228px; }
-  #sidebar.affix {
-    position: fixed;
-    top: 30px;
-    width: 228px; } }
 
 @font-face {
   font-family: 'Open Sans Light';

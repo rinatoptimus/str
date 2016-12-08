@@ -1,6 +1,7 @@
 @import '_variables';
 @import '_mixins';
 @import '_popup-clinics';
+@import '_sticky-sidebar';
 
 body {
   background-color: $bg-body;
@@ -11,16 +12,11 @@ h4 {
   font-size: 22px;
   font-family: $bold;
   font-weight: 900;
-  //color: $header-h4;
 }
 
 h5 {
   font-size: 16px;
   font-family: $semibold;
-}
-
-.navbar {
-  //background-color: $white;
 }
 
 .navbar-contacts {
@@ -43,52 +39,23 @@ h5 {
   background-color: grey;
 }
 
-.well {
-  border-radius: 7px;
-  border: none;
-  .nav-pills {
-    margin-top: 23px;
-    margin-left: 5px;
-    text-align: left;
-    li.active {
-      a {
-        background-color: transparent;
-      }
-    }
-    li {
-      display: block;
-      margin-bottom: 5px;
-      &:hover {
-        background-color: $bg-body;
-      }
-      a {
-        //text-transform: $caps;
-        color: $sidebar-link;
-        &:hover {
-          color: $sidebar-link;
-        }
-      }
-    }
-  }
-  .nav-stacked > li {
-    @include large-desktop {
-      float: left;
-    }
-  }
-}
-
 .breadcrumb {
   margin-left: -7px;
   padding: 13px 8px 0px;
-  .breadcrumb-first {
-    color: $breadcrumb-first;
-  }
-  li {
-    a, span {
-      font-size: 11px;
-      color: $breadcrumb-links;
+  background-color: transparent;
+    .breadcrumb-first {
+      color: $breadcrumb-first;
     }
-  }
+    li {
+      a, span {
+        font-size: 11px;
+        color: $breadcrumb-links;
+      }
+      .fa-angle-down {
+        padding-left: 4px;
+        font-size: 10px;
+      }
+    }
 }
 
 .breadcrumb > li + li:before {
@@ -123,6 +90,7 @@ h5 {
     bottom: 0;
     left: 0;
     background-color: $img-overlay;
+    border-radius: 7px 7px 0 0;
     opacity: .3;
   }
   .clinic-img-list {
@@ -187,7 +155,6 @@ h5 {
     }
 }
 
-
 .col-right {
   float: right;
   border-radius: 0 0 7px 7px;
@@ -243,10 +210,6 @@ h5 {
   }
 }
 
-
-/*.col-right {
-    padding-right: 0;
-}*/
 .thumbnail {
   border: none;
   &:hover {
@@ -313,8 +276,17 @@ h5 {
       }
     }
   }
-  img {
-    margin-top: 20px;
+  .round {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    margin: 17px auto 0;
+      img {
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+      }
   }
   .caption {
     padding: 9px 9px 20px;
@@ -360,6 +332,7 @@ h5 {
   border-radius: 7px;
   h4 {
     display: block;
+    margin-bottom: 20px;
     &:before {
       content: '';
       display: block;
@@ -388,9 +361,10 @@ h5 {
 .col-requisites {
   border-radius: 7px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   h4 {
     display: block;
+    margin-bottom: 25px;
     &:before {
       content: '';
       display: block;

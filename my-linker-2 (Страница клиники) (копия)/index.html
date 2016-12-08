@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/css/style.css">
 </head>
-<body>
+<body data-target=".scrollspy">
     <nav class="navbar navbar-fixed-top navbar-main-menu">
         <div class="container">
             <div class="navbar-header">
@@ -74,18 +74,21 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-sidebar">
-                <div class="well" id="sidebar">
+
+            <div class="col-lg-3 col-sidebar scrollspy-sidebar">
+                <div class="well affix-top" id="sidebar">
                     <div class="sidebar-logo"></div>
-                    <ul class="nav nav-pills nav-stacked">
-                        <li class="active text-uppercase"><a href="#">Клиника Биомед</a></li>
-                        <li><a href="#" class="text-uppercase">Врачи</a></li>
-                        <li><a href="#" class="text-uppercase">Описание</a></li>
-                        <li><a href="#" class="text-uppercase">Фотографии</a></li>
-                        <li><a href="#" class="text-uppercase">Исследования</a></li>
-                        <li><a href="#" class="text-uppercase">Документы</a></li>
-                        <li><a href="#" class="text-uppercase">Реквизиты</a></li>
-                    </ul>
+                    <nav class="bs-docs-sidebar">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="text-uppercase"><a href="#clinics-biomed">Клиника Биомед</a></li>
+                            <li><a href="#doctors" class="text-uppercase">Врачи</a></li>
+                            <li><a href="#" class="text-uppercase">Описание</a></li>
+                            <li><a href="#" class="text-uppercase">Фотографии</a></li>
+                            <li><a href="#researches" class="text-uppercase">Исследования</a></li>
+                            <li><a href="#" class="text-uppercase">Документы</a></li>
+                            <li><a href="#requisites" class="text-uppercase">Реквизиты</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 
@@ -95,7 +98,7 @@
                         <ul class="breadcrumb">
                             <li><a class="breadcrumb-first" href="#">Оформление заказа</a></li>
                             <li><a href="#">Методы оплаты и доставки</a></li>
-                            <li class="active"><span>Оплата</span></li>
+                            <li class="active"><span>Оплата</span><i class="fa fa-angle-down fa-1" aria-hidden="true"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -128,7 +131,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-9 col-about bg-white">
+            <div class="col-lg-9 col-about bg-white" id="clinics-biomed">
                 <ul class="header-list pull-right">
                     <li><a href="#" class="reviews"><i class="fa fa-comment fa-1" aria-hidden="true"></i> 17</a></li>
                     <li><a href="#"><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 219</a></li>
@@ -154,7 +157,7 @@
 
             <div class="col-lg-9 col-md-12 col-right col-persons">
                 <!--<div class="row">-->
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-left">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-left" id="doctors">
                         <div class="thumbnail">
 
                             <ul class="thumbnail-info">
@@ -173,7 +176,9 @@
                                 </li>
                             </ul>
 
-                            <img class="img-circle" src="http://placehold.it/130x130&text=Person 1" alt="">
+                            <div class="round">
+                                <img src="app/img/doctor-ava.png" alt="">
+                            </div>
                             <div class="caption">
                                 <h3>Евгений Гуляев</h3>
                                 <p class="skill">Заслуженный врач-кардиолог.</p>
@@ -199,7 +204,9 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <img class="img-circle" src="http://placehold.it/130x130&text=Person 1" alt="">
+                            <div class="round">
+                                <img src="app/img/doctor-ava.png" alt="">
+                            </div>
                             <div class="caption">
                                 <h3>Евгений Гуляев</h3>
                                 <p class="skill">Заслуженный врач-кардиолог.</p>
@@ -225,7 +232,9 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <img class="img-circle" src="http://placehold.it/130x130&text=Person 1" alt="">
+                            <div class="round">
+                                <img src="app/img/doctor-ava.png" alt="">
+                            </div>
                             <div class="caption">
                                 <h3>Евгений Гуляев</h3>
                                 <p class="skill">Заслуженный врач-кардиолог.</p>
@@ -240,7 +249,7 @@
                 <!--</div>-->
             </div>
 
-            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-right col-diseases bg-white">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-right col-diseases bg-white" id="researches">
                 <h4 class="text-uppercase">Исследования</h4>
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3">
@@ -286,7 +295,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-right col-requisites bg-white">
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-right col-requisites bg-white" id="requisites">
                 <h4 class="text-uppercase">Реквизиты</h4>
                 <address>
                     <p><strong>ООО "Барс Медицина"</strong></p>
@@ -328,7 +337,6 @@
                     </div>
                 </div>
             </div>
-
 
         </div>
     </div>
@@ -373,6 +381,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="app/js/sticky-sidebar.js"></script>
+    <script src="app/js/scrollspy-sidebar.js"></script>
     <script src="app/js/popup-clinics.js"></script>
 </body>
 </html>
