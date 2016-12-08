@@ -705,6 +705,10 @@ h5 {
   .col-sidebar .well {
     background-color: #fff; }
 
+.col-lg-9.bg-white {
+  padding-left: 25px;
+  padding-right: 25px; }
+
 .sidebar-logo {
   width: 103px;
   height: 36px;
@@ -952,6 +956,7 @@ h5 {
     text-decoration: none; }
 
 .col-diseases {
+  padding-bottom: 25px;
   -webkit-border-radius: 7px;
           border-radius: 7px; }
   .col-diseases h4 {

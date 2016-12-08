@@ -26,8 +26,15 @@ h5 {
 
 .col-sidebar {
   margin-top: 19px;
-  .well {
-    background-color: $white;
+    .well {
+      background-color: $white;
+    }
+}
+
+.col-lg-9.bg-white {
+  padding: {
+    left: 25px;
+    right: 25px;
   }
 }
 
@@ -327,6 +334,7 @@ h5 {
 }
 
 .col-diseases {
+  padding-bottom: 25px;
   border-radius: 7px;
   h4 {
     display: block;
