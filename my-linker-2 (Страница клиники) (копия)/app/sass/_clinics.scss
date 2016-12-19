@@ -406,13 +406,17 @@ h5 {
 
 .col-certificates {
   margin-bottom: 30px;
+  @include medium-desktop-lg {
+    float: none;
+  }
   .row {
     div {
+      text-align: center;
       @include phone-lg {
         text-align: center;
       }
       img {
-        cursor: pointer;
+        cursor: zoom-in;
         @include large-desktop {
           width: 200px;
           margin-bottom: 5px;

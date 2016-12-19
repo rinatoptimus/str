@@ -796,15 +796,21 @@ h5 {
 
 .col-certificates {
   margin-bottom: 30px; }
-  @media (max-width: 571px) {
-    .col-certificates .row div {
-      text-align: center; } }
-  .col-certificates .row div img {
-    cursor: pointer; }
-    @media (max-width: 1201px) {
-      .col-certificates .row div img {
-        width: 200px;
-        margin-bottom: 5px; } }
+  @media (max-width: 991px) {
+    .col-certificates {
+      float: none; } }
+  .col-certificates .row div {
+    text-align: center; }
+    @media (max-width: 571px) {
+      .col-certificates .row div {
+        text-align: center; } }
+    .col-certificates .row div img {
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in; }
+      @media (max-width: 1201px) {
+        .col-certificates .row div img {
+          width: 200px;
+          margin-bottom: 5px; } }
 
 footer {
   height: 100px;
