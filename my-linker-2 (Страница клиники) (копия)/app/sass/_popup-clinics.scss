@@ -21,7 +21,7 @@
 }
 
 /* Caption of Modal Image */
-#caption {
+#caption, #caption2, #caption3 {
   margin: auto;
   display: block;
   width: 80%;
@@ -33,7 +33,7 @@
 }
 
 /* Add Animation */
-.modal-content, #caption {
+.modal-content, #caption, #caption2, #caption3 {
   animation-name: zoom;
   animation-duration: 0.6s;
 }

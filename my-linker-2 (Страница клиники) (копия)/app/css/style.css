@@ -373,7 +373,7 @@ span.numbers {
   max-width: 700px; }
 
 /* Caption of Modal Image */
-#caption {
+#caption, #caption2, #caption3 {
   margin: auto;
   display: block;
   width: 80%;
@@ -384,7 +384,7 @@ span.numbers {
   height: 150px; }
 
 /* Add Animation */
-.modal-content, #caption {
+.modal-content, #caption, #caption2, #caption3 {
   -webkit-animation-name: zoom;
           animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -498,6 +498,10 @@ h5 {
 .col-lg-9.bg-white {
   padding-left: 25px;
   padding-right: 25px; }
+  @media (max-width: 571px) {
+    .col-lg-9.bg-white {
+      margin-top: -10px;
+      padding-top: 15px; } }
 
 .sidebar-logo {
   width: 103px;
@@ -559,14 +563,24 @@ h5 {
       background-color: #fff;
       -webkit-border-radius: 7px;
               border-radius: 7px; }
+      @media (max-width: 571px) {
+        .clinic-img .clinic-img-list li.li-logo {
+          float: none;
+          margin-bottom: 15px; } }
       .clinic-img .clinic-img-list li.li-logo .clinic-logo {
         width: 142px;
         height: 60px;
         background-color: grey;
         background: url("../img/logo-ctbc-corel.png") no-repeat;
         background-position: 53% 31%; }
+        @media (max-width: 571px) {
+          .clinic-img .clinic-img-list li.li-logo .clinic-logo {
+            width: 100%; } }
     .clinic-img .clinic-img-list li.li-divider {
       position: absolute; }
+      @media (max-width: 571px) {
+        .clinic-img .clinic-img-list li.li-divider {
+          display: none; } }
       .clinic-img .clinic-img-list li.li-divider .logo-divider {
         position: relative;
         width: 1px;
@@ -578,29 +592,44 @@ h5 {
       float: none; }
       .clinic-img .clinic-img-list li.li-address .clinic-address {
         margin-top: -5px; }
+        @media (max-width: 571px) {
+          .clinic-img .clinic-img-list li.li-address .clinic-address {
+            padding-left: 0; } }
         .clinic-img .clinic-img-list li.li-address .clinic-address li {
           line-height: 23px; }
           .clinic-img .clinic-img-list li.li-address .clinic-address li .fa-map-marker, .clinic-img .clinic-img-list li.li-address .clinic-address li a {
             color: #fff; }
 
-.col-about {
+.col-clinic-desc {
   float: right; }
-  .col-about .header-list {
+  .col-clinic-desc .header-list {
     margin-top: 18px;
     margin-bottom: 0; }
-    .col-about .header-list li {
+    .col-clinic-desc .header-list li {
       float: left;
       padding-right: 15px;
       font-size: 11px; }
-      .col-about .header-list li a {
+      .col-clinic-desc .header-list li a {
         color: #898989; }
-      .col-about .header-list li .fa-comment {
+      .col-clinic-desc .header-list li .fa-comment {
         color: #68a697; }
 
 .col-right {
   float: right;
   -webkit-border-radius: 0 0 7px 7px;
           border-radius: 0 0 7px 7px; }
+
+.col-clinic-desc {
+  float: right; }
+  @media (max-width: 767px) {
+    .col-clinic-desc {
+      float: none; } }
+
+.col-images {
+  float: right; }
+  @media (max-width: 767px) {
+    .col-images {
+      float: none; } }
 
 .row-images {
   padding-bottom: 15px;
@@ -613,36 +642,70 @@ h5 {
       .row-images div img {
         margin: 10px auto;
         display: block; } }
+    @media (max-width: 571px) {
+      .row-images div img {
+        width: 373px; } }
+    @media (max-width: 401px) {
+      .row-images div img {
+        width: 325px; } }
+    @media (max-width: 326px) {
+      .row-images div img {
+        width: 270px; } }
 
 .card {
   position: relative; }
 
 .col-persons {
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
   padding-left: 0;
   padding-right: 0; }
-
-.col-persons .col-left {
-  width: 298px;
-  margin-left: -15px; }
-  @media (max-width: 991px) {
-    .col-persons .col-left {
-      width: 258px; } }
-
-.col-persons .col-center {
-  width: 298px;
-  margin-left: 5px; }
-  @media (max-width: 991px) {
-    .col-persons .col-center {
-      width: 258px; } }
-
-.col-persons .col-right {
-  width: 285px;
-  margin-left: -5px;
-  padding-right: 0; }
-  @media (max-width: 991px) {
-    .col-persons .col-right {
-      width: 245px; } }
+  @media (max-width: 571px) {
+    .col-persons {
+      display: block; } }
+  @media (max-width: 767px) {
+    .col-persons {
+      float: none; } }
+  .col-persons .col-left {
+    float: right;
+    width: 298px;
+    margin-left: -15px; }
+    @media (max-width: 991px) {
+      .col-persons .col-left {
+        width: 258px; } }
+    @media (max-width: 767px) {
+      .col-persons .col-left {
+        float: none;
+        display: inline; } }
+  .col-persons .col-center {
+    width: 298px;
+    margin-left: 5px; }
+    @media (max-width: 991px) {
+      .col-persons .col-center {
+        width: 258px; } }
+    @media (max-width: 767px) {
+      .col-persons .col-center {
+        display: inline; } }
+  .col-persons .col-right {
+    width: 285px;
+    margin-left: -5px;
+    padding-right: 0; }
+    @media (max-width: 991px) {
+      .col-persons .col-right {
+        width: 245px; } }
+    @media (max-width: 767px) {
+      .col-persons .col-right {
+        width: 200px;
+        float: none;
+        display: inline; } }
 
 .thumbnail {
   border: none;
@@ -658,12 +721,15 @@ h5 {
     width: 260px;
     margin-top: 10px;
     padding-left: 0; }
-    @media (max-width: 1201px) {
-      .thumbnail .thumbnail-info {
-        width: 210px; } }
     @media (max-width: 991px) {
       .thumbnail .thumbnail-info {
         width: 220px; } }
+    @media (max-width: 571px) {
+      .thumbnail .thumbnail-info {
+        width: 420px; } }
+    @media (max-width: 401px) {
+      .thumbnail .thumbnail-info {
+        width: 315px; } }
     .thumbnail .thumbnail-info li {
       float: left; }
       .thumbnail .thumbnail-info li .thumbnail-profession-tags {
@@ -685,10 +751,15 @@ h5 {
             .thumbnail .thumbnail-info li .thumbnail-profession-tags li a:hover {
               text-decoration: none; }
     .thumbnail .thumbnail-info li .thumbnail-statistics {
-      float: left; }
-      @media (max-width: 1201px) {
+      float: left;
+      width: 82px;
+      padding-left: 0; }
+      @media (max-width: 767px) {
         .thumbnail .thumbnail-info li .thumbnail-statistics {
           margin-top: -75px; } }
+      @media (max-width: 571px) {
+        .thumbnail .thumbnail-info li .thumbnail-statistics {
+          margin-top: 0; } }
       .thumbnail .thumbnail-info li .thumbnail-statistics li {
         padding-right: 5px;
         font-size: 11px; }
@@ -735,6 +806,9 @@ h5 {
         background: -webkit-linear-gradient(top, #00c7bb 0%, #01867a 100%);
         background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%); }
 
+.container-show-all {
+  float: right; }
+
 .show-all-doctors {
   margin-bottom: 15px;
   margin-right: 15px;
@@ -748,7 +822,13 @@ h5 {
 .col-diseases {
   padding-bottom: 25px;
   -webkit-border-radius: 7px;
-          border-radius: 7px; }
+          border-radius: 7px;
+  float: right; }
+  @media (max-width: 767px) {
+    .col-diseases {
+      float: none;
+      margin-top: 60px;
+      padding-top: 15px; } }
   .col-diseases h4 {
     display: block;
     margin-top: 20px;
@@ -763,6 +843,9 @@ h5 {
       margin: 0 6px 0 0;
       background-size: 130%;
       background-position: 44% 57%; }
+      @media (max-width: 401px) {
+        .col-diseases h4:before {
+          margin-top: 14px; } }
   .col-diseases .row .col-lg-3 ul {
     padding: 0; }
     .col-diseases .row .col-lg-3 ul li {

@@ -36,6 +36,10 @@ h5 {
     left: 25px;
     right: 25px;
   }
+  @include phone-lg {
+    margin-top: -10px;
+    padding-top: 15px;
+  }
 }
 
 .sidebar-logo {
@@ -108,16 +112,26 @@ h5 {
       margin-right: 50px;
       background-color: $white;
       border-radius: 7px;
-      .clinic-logo {
-        width: 142px;
-        height: 60px;
-        background-color: grey;
-        background: url('../img/logo-ctbc-corel.png') no-repeat;
-        background-position: 53% 31%;
+      @include phone-lg {
+        float: none;
+        margin-bottom: 15px;
       }
+        .clinic-logo {
+          width: 142px;
+          height: 60px;
+          background-color: grey;
+          background: url('../img/logo-ctbc-corel.png') no-repeat;
+          background-position: 53% 31%;
+          @include phone-lg {
+            width: 100%;
+          }
+        }
     }
     li.li-divider {
       position: absolute;
+      @include phone-lg {
+        display: none;
+      }
         .logo-divider {
           position: relative;
           width: 1px;
@@ -131,6 +145,9 @@ h5 {
       float: none;
       .clinic-address {
         margin-top: -5px;
+        @include phone-lg {
+          padding-left: 0;
+        }
         li {
           line-height: 23px;
           .fa-map-marker, a {
@@ -142,7 +159,7 @@ h5 {
   }
 }
 
-.col-about {
+.col-clinic-desc {
   float: right;
     .header-list {
       margin-top: 18px;
@@ -165,38 +182,77 @@ h5 {
   float: right;
   border-radius: 0 0 7px 7px;
 }
-
+.col-clinic-desc {
+  float: right;
+  @include small-devices { // 1111
+    float: none;
+  }
+}
+.col-images {
+  float: right;
+  @include small-devices { // 1111
+    float: none;
+  }
+}
 .row-images {
   padding-bottom: 15px;
   border-radius: 0 0 7px 7px;
-  div {
-    img {
-      display: inline;
-      margin: 0;
-      @include large-desktop {
-        margin: 10px auto;
-        display: block;
+    div {
+      img {
+        display: inline;
+        margin: 0;
+        @include large-desktop {
+          margin: 10px auto;
+          display: block;
+        }
+        @include phone-lg {
+          width: 373px;
+        }
+        @include phone {
+          width: 325px;
+        }
+        @include phone-mini {
+          width: 270px;
+        }
       }
     }
-  }
 }
 
 .card {
   position: relative;
 }
 
+//.col-persons {
+//  margin-top: 20px;
+//  padding-left: 0;
+//  padding-right: 0;
+//}
+
 .col-persons {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+
   margin-top: 20px;
   padding-left: 0;
   padding-right: 0;
-}
-
-.col-persons {
+  @include phone-lg {
+    display: block;
+  }
+  @include small-devices {
+    float: none;
+  }
   .col-left {
+    float: right;
+
     width: 298px;
     margin-left: -15px;
     @include medium-desktop-lg {
       width: 258px;
+    }
+    @include small-devices {
+      float: none;
+      display: inline;
     }
   }
   .col-center {
@@ -205,6 +261,9 @@ h5 {
     @include medium-desktop-lg {
       width: 258px;
     }
+    @include small-devices {
+      display: inline;
+    }
   }
   .col-right {
     width: 285px;
@@ -212,6 +271,11 @@ h5 {
     padding-right: 0;
     @include medium-desktop-lg {
       width: 245px;
+    }
+    @include small-devices { // 1111
+      width: 200px;
+      float: none;
+      display: inline;
     }
   }
 }
@@ -230,10 +294,16 @@ h5 {
     margin-top: 10px;
     padding-left: 0;
     @include large-desktop {
-      width: 210px;
+      //width: 210px;
     }
     @include medium-desktop-lg {
       width: 220px;
+    }
+    @include phone-lg {
+      width: 420px; // 1111
+    }
+    @include phone {
+      width: 315px; // 1111
     }
     li {
       float: left;
@@ -263,8 +333,16 @@ h5 {
     li {
       .thumbnail-statistics {
         float: left;
+        width: 82px;
+        padding-left: 0;
         @include large-desktop {
-          margin-top: -75px;
+          //margin-top: -75px;
+        }
+        @include small-devices {
+          margin-top: -75px; //1111
+        }
+        @include phone-lg {
+          margin-top: 0;
         }
         li {
           padding-right: 5px;
@@ -321,6 +399,9 @@ h5 {
   }
 }
 
+.container-show-all {
+  float: right;
+}
 .show-all-doctors {
   margin-bottom: 15px;
   margin-right: 15px;
@@ -336,6 +417,13 @@ h5 {
 .col-diseases {
   padding-bottom: 25px;
   border-radius: 7px;
+
+  float: right;
+  @include small-devices {
+    float: none;
+    margin-top: 60px;
+    padding-top: 15px;
+  }
   h4 {
     display: block;
     margin: {
@@ -352,6 +440,9 @@ h5 {
       margin: 0 6px 0 0;
       background-size: 130%;
       background-position: 44% 57%;
+      @include phone {
+        margin-top: 14px;
+      }
     }
   }
   .row {
